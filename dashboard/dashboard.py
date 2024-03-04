@@ -101,7 +101,7 @@ def predict_k_means_clustering(point, centers):
     return nearest_center
 
 # Memuat dataset
-df = pd.read_csv('day.csv')
+df = pd.read_csv('https://github.com/haiffy420/analisis-bike-sharing/blob/main/dashboard/day.csv')
 datetime_columns = ["dteday"]
 df.sort_values(by="dteday", inplace=True)
 df.reset_index(inplace=True)
@@ -113,7 +113,7 @@ min_date = df["dteday"].min()
 max_date = df["dteday"].max()
 with st.sidebar:
     st.title("Analisis Data Bike Sharing")
-    st.image("logo.png")
+    st.image("https://github.com/haiffy420/analisis-bike-sharing/blob/main/dashboard/logo.png")
     st.subheader('Rentang Waktu')
     start_date = st.date_input(label="Tanggal Mulai", value=min_date, max_value=max_date)
     end_date = st.date_input(label="Tanggal Selesai", value=max_date, max_value=max_date)
