@@ -24,7 +24,7 @@ Aplikasi ini dibangun menggunakan Streamlit, sebuah framework Python untuk membu
 ```
 conda create --name yourname-ds python=3.9
 conda activate yourname-ds
-pip install numpy pandas scipy matplotlib seaborn jupyter streamlit scikit-learn babel
+pip install -r requirements.txt
 ```
 
 ## Run steamlit app 🚀
